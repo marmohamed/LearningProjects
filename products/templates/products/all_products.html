@@ -1,0 +1,13 @@
+{% extends "master.html" %}
+
+{% block title %}
+  My products store - List of all products
+{% endblock %}
+  
+{% block content %}
+<ul>
+  {% for x in allProducts %}
+    <li><a href="details/{{ x.id }}">{{ x.productName }} {{ x.productPrice }} {{ x.productCount }}</a></li>
+  {% endfor %}
+</ul>
+{% endblock %}

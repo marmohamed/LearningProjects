@@ -1,0 +1,14 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Deatils about {{ myproduct.productName }}
+{% endblock %}
+
+{% block content %}
+<h1>{{ myproduct.productName }}</h1>
+  
+<p>Price: {{ myproduct.productPrice }}</p>
+<p>Count: {{ myproduct.productCount }}</p>
+
+<p>Back to <a href="/products">Products</a></p>
+{% endblock %}
